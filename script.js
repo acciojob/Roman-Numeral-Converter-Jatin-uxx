@@ -1,4 +1,5 @@
-let str=""
+function convertToRoman(num) {
+  	let str=""
 let map= new Map( )
 map.set('M',1000)
 map.set('D', 500)
@@ -13,30 +14,28 @@ map.set('V', 5)
 map.set('IV', 4)
 map.set('I', 1)
 
-      let n=69
+     
       
       for(let [char,value] of map)
       {
-      while(n>=value)
+      while(num>=value)
       {
            str+=char
-          n-=value
+          num-=value
          
          
       }
       
       }
-         console.log(str)
+       return str
     
       
       
 
-  //your code here
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-// console.log(convertToRoman(36));
+console.log(convertToRoman(36));
 
 
 
