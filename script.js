@@ -2,6 +2,7 @@ function convertToRoman(num) {
   	let str=""
 let map= new Map( )
 map.set('M',1000)
+	map.set('CM',900)
 map.set('D', 500)
 map.set('CD', 400)
 map.set('C', 100)
